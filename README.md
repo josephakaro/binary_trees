@@ -3,4 +3,4 @@
 Done By:
 
 1. Joseph Akaro
-2. Wamalwa Neslon
+2. Wamalwa Nelson
