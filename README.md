@@ -4,36 +4,37 @@
 A tree is a non-linear abstract data type with a hierarchy-based structure. It consists of nodes (where the data is stored) that are connected via links. The tree data structure stems from a single node called a root node and has subtrees connected to the root.
 ## Installation
 ```bash
-    git clone https://github.com/josephakaro/binary_trees.git
+git clone https://github.com/josephakaro/binary_trees.git
 ```
 
 ```bash
-    cd binary_trees
+cd binary_trees
 ```
 
 ```bash
-    gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 0-main.c 0-binary_tree_node.c -o 0-node
+cc -Wall -Wextra -Werror -pedantic binary_tree_print.c 0-main.c 0-binary_tree_node.c -o 0-node
 ```
 
 ## Usage
 ```bash
-    root/binary_trees$ cat 0-main.c   
+	root/binary_trees$ cat 0-main.c
 ```
 
-```c 
-    #include <stdlib.h>
-    #include "binary_trees.h"
+```c
+#include <stdlib.h>
+#include "binary_trees.h"
 
-    /**
-    * main - Entry point
-    *
-    * Return: Always 0 (Success)
-    */
-    int main(void)
-    {
-        binary_tree_t *root;
+/**
+* main - Entry point
+*
+* Return: Always 0 (Success)
+*/
 
-        root = binary_tree_node(NULL, 98);
+int main(void)
+{
+    binary_tree_t *root;
+
+     root = binary_tree_node(NULL, 98);
 
         root->left = binary_tree_node(root, 12);
         root->left->left = binary_tree_node(root->left, 6);
@@ -49,7 +50,7 @@ A tree is a non-linear abstract data type with a hierarchy-based structure. It c
 ```
 
 ```bash
-    root/binary_trees$ gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 0-main.c 0-binary_tree_node.c -o 0-node
+root/binary_trees$ gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 0-main.c 0-binary_tree_node.c -o 0-node
     root/binary_trees$ ./0-node
             .-------(098)-------.
     .--(012)--.         .--(402)--.

@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-#ifndef BINARY_TREES
-#define BINARY_TREES
-=======
 #ifndef _BINARY_TREES_H_
 #define _BINARY_TREES_H_
->>>>>>> b1ce4a8 (Completed)
 
 #include <stddef.h>
 #include <stdio.h>
@@ -20,38 +15,14 @@
  * @left: Pointer to the left child node
  * @right: Pointer to the right child node
  */
-<<<<<<< HEAD
-typedef struct binary_tree_s
-=======
 struct binary_tree_s
->>>>>>> b1ce4a8 (Completed)
 {
 	int n;
 	struct binary_tree_s *parent;
 	struct binary_tree_s *left;
 	struct binary_tree_s *right;
-<<<<<<< HEAD
-} binary_tree_t;
-
-void binary_tree_print(const binary_tree_t *);
-
-/* -- Binary Search Tree -- */
-typedef struct binary_tree_s bst_t;
-
-/* -- AVL Tree --*/
-typedef struct binary_tree_s avl_t;
-
-/* -- Max Binary Heap --*/
-typedef struct binary_tree_s heap_t;
-
-
-/* -- Function Prototypes -- */
-/* -- Mandatory Tasks -- */
-binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
-
-#endif /* _BINARY_TREES_H_ */
-=======
 };
+
 typedef struct binary_tree_s binary_tree_t;
 typedef struct binary_tree_s bst_t;
 typedef struct binary_tree_s avl_t;
@@ -115,4 +86,3 @@ int heap_extract(heap_t **root);
 int *heap_to_sorted_array(heap_t *heap, size_t *size);
 
 #endif /* _BINARY_TREES_H_ */
->>>>>>> b1ce4a8 (Completed)
