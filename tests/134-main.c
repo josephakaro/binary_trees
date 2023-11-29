@@ -1,11 +1,12 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "../binary_trees.h"
+#include "binary_trees.h"
 
-/*
- * print_array - This prints an array of integers
- * @array: An array to be printed
- * @size: The number of elements in @array
+/**
+ * print_array - Prints an array of integers
+ *
+ * @array: The array to be printed
+ * @size: Number of elements in @array
  */
 void print_array(const int *array, size_t size)
 {
@@ -22,10 +23,10 @@ void print_array(const int *array, size_t size)
     printf("\n");
 }
 
-/*
- * main - This the entry point
+/**
+ * main - Entry point
  *
- * Return: 0 on success, error when the  code on fails
+ * Return: 0 on success, error code on failure
  */
 int main(void)
 {
